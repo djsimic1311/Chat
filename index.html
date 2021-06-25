@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/col.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>This is a Chat</h1>
+        <h2>Chose a chatroom</h2>
+    </header>
+
+    <div id="nav" class="flex_container">
+        <button id="room1" class="btn col-3 col-t-3">#room1</button>
+        <button id="room2" class="btn col-3 col-t-3">#room2</button>
+        <button id="room3" class="btn col-3 col-t-3">#room3</button>
+        <button id="room4" class="btn col-3 col-t-3">#room4</button>
+    </div>
+
+    <div class="chatDivContainer">
+        <ul id="chatDiv" class="chatDiv col-9 col-t-12"></ul>
+    </div>
+
+    <footer>
+        <form id="msgForm">
+            <input type="text" id="messageInput" class="col-6 col-t-6 h40" placeholder="Message">
+            <button type="submit" class="col-3 col-t-3 h40 btn">Send</button>
+        </form>
+    
+        <form id="usernameForm">
+            <input type="text" id="usernameInput" class="col-6 col-t-6 h40" placeholder="Update username">
+            <button type="submit" class="col-3 col-t-3 h40 btn">Update</button>
+        </form>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="modules/firebase.js"></script>
+</body>
+</html>
